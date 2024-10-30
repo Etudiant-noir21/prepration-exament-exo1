@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation des types</title>
+</head>
+<body>
+    <h1>manipulation des types</h1>
+
+    <script>
+        // fonction typeChecker
+        function typeChecker(value) {
+            if(value=== null) return "null";
+            if(Array.isArray(value)) return "array"
+            return typeof value;
+        }
+        console.log("le fonction est de type : "+typeChecker('messi'));
+        console.log("le fonction est de type : "+typeChecker(12));
+        console.log("le fonction est de type : "+typeChecker(true));
+        console.log("le fonction est de type : "+typeChecker());
+        console.log("le fonction est de type : "+typeChecker(null));
+        console.log("le fonction est de type : "+typeChecker({}));
+        console.log("le fonction est de type : "+typeChecker([2, 4, 6]));
+    </script>
+</body>
+</ht
